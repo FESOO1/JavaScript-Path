@@ -1,16 +1,167 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 :root {
-    --f-poppins: "Poppins", serif;
+    --f-inter: "Inter", serif;
 }
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: var(--f-poppins);
+    font-family: var(--f-inter);
 }
 
 body {
     background-color: rgb(21,20,22);
+}
+
+/* JAVASCRIPT PATH */
+
+.javascript-path-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-block: 80px;
+    row-gap: 30px;
+}
+
+/* JAVASCRIPT PATH HEADER */
+
+.js-path-container-header {
+    display: flex;
+}
+
+.js-path-container-header-itself {
+    color: white;
+    font-weight: 600;
+    font-size: 2.2rem;
+}
+
+/* JAVASCRIPT PATH ITSELF */
+
+.js-path-itself {
+    padding: 10px;
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 35px;
+}
+
+.js-path-itself-text {
+    color: white;
+    line-height: 1.7;
+}
+
+.js-path-itself-text-two {
+    color: white;
+    line-height: 1.7;
+    padding-inline: 20px;
+}
+
+.js-path-itself-link {
+    color: #8bb3fe;
+    font-weight: 400;
+    text-decoration-thickness: 1px;
+}
+
+.js-path-itself-link:hover {
+    text-decoration: none;
+}
+
+.js-path-itself-link:visited {
+    color: blueviolet;
+}
+
+/* JAVASCRIPT PATH ITSELF INNER */
+
+.js-path-itself-inner {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.js-path-itself-subheader {
+    color: white;
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+
+/* JAVASCRIPT PATH ITSELF UNORDERED LIST */
+
+.js-path-itself-un {
+    padding-block: 10px;
+    padding-inline: 40px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.js-path-itself-un-list {
+    color: white;
+}
+
+/* JAVASCRIPT PATH ITSELF SPECIAL */
+
+.js-path-itself-special {
+    padding: 15px;
+    background-color: rgb(31,30,32);
+    border-radius: 1rem;
+}
+
+/* JAVASCRIPT PATH ITSELF UNORDERED LIST CONTENT */
+
+.js-path-itself-un-content {
+    display: none;
+    flex-direction: column;
+    row-gap: 10px;
+    padding-inline: 40px;
+}
+
+.js-path-itself-un-content-active {
+    display: flex;
+}
+
+/* SHOW CONTENT BUTTON */
+
+.js-path-itself-show-content-button-container {
+    display: flex;
+    padding-inline: 20px;
+}
+
+.js-path-itself-show-content-button-itself {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    font-size: 1rem;
+    padding: 8px 10px;
+    border-radius: 0.2rem;
+    border: 0;
+    color: white;
+    background-color: rgb(35,34,36);
+    cursor: pointer;
+    border-top: 1px solid rgba(255,255,255,0.02);
+    border-bottom: 1px solid rgba(255,255,255,0.02);
+}
+
+.js-path-itself-show-content-button-itself-text {
+    color: white;
+    font-weight: 400;
+}
+
+.js-path-itself-show-content-button-itself-svg {
+    color: white;
+    width: 15px;
+    height: 15px;
+}
+
+.js-path-itself-show-content-button-itself:hover {
+    background-color: rgb(45,44,46);
+}
+
+.js-path-itself-show-content-button-itself:active {
+    background-color: rgb(41,40,42);
+}
+
+.js-path-itself-show-content-button-itself-shown .js-path-itself-show-content-button-itself-svg {
+    transform: rotateZ(180deg);
 }
