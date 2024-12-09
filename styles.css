@@ -35,6 +35,7 @@ body {
     color: white;
     font-weight: 600;
     font-size: 2.2rem;
+    text-align: center;
 }
 
 /* JAVASCRIPT PATH ITSELF */
@@ -164,4 +165,33 @@ body {
 
 .js-path-itself-show-content-button-itself-shown .js-path-itself-show-content-button-itself-svg {
     transform: rotateZ(180deg);
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 900px) {
+    .js-path-itself {
+        width: 100%;
+    }
+    .javascript-path-container {
+        padding-inline: 40px;
+    }
+    .js-path-container-header-itself {
+        font-size: 2rem;
+    }
+    .js-path-itself-subheader {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .javascript-path-container {
+        padding-inline: 20px;
+    }
+}
+
+@media (max-width: 350px) {
+    .javascript-path-container {
+        padding-inline: 10px;
+    }
 }
